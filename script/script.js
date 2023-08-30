@@ -2,6 +2,7 @@
 // Variable references
 const apiKey = "9d07c9333ee2c5bd9c5167721f6ac08f";
 const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=YOUR_CITY_NAME&units=metric&appid=${apiKey}`;
+const weatherDisplay = document.getElementById("weatherDisplay")
 
 //get references from input and submit button
 
@@ -27,6 +28,15 @@ if (event.key === "Enter") {
 })
 
 // get weather data from API
-
+function getWeather (cityName) {
+    fetch(apiUrl)
+    .then(response => response.json())
+    .then(data => {
+        displayWeather(data);
+    })
+    .catch(error => {
+        console.error("Error fetching eather data:", error)
+    });
+}
 
 // Display weather data
