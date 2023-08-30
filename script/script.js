@@ -40,3 +40,10 @@ function getWeather (cityName) {
 }
 
 // Display weather data
+function displayWeather(data) {
+const temperature = data.main.temp;
+const description = data.weather[0].description;
+
+weatherDisplay.innerHTML = 'Temperature: ${temperature}°C<br>Description: ${description}'
+
+}
