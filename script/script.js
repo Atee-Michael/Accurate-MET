@@ -17,6 +17,14 @@ submitButton.addEventListener("click", function(event){
     console.log("City entered is: ", cityName);
 })
 
+// Event listener for the enter key
+cityInput.addEventListener("keydown", function(event) {
+if (event.key === "Enter") {
+    event.preventDefault();
+        submitButton.click(); // this the submit the submit buttons click event
+}
+
+})
 
 // get weather data from API
 
