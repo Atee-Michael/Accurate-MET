@@ -48,3 +48,30 @@ const description = data.weather[0].description;
 weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Description: ${description}`;
 
 }
+
+
+
+/* Project objectives
+
+Weather icon representing the current conditions.
+
+Additional Weather Details:
+
+    Feels-like temperature.
+    Humidity percentage.
+    Wind speed and direction.
+    Atmospheric pressure.
+
+Location Information:
+
+    City name.
+    Country code.
+    Geographic coordinates (latitude and longitude).
+
+Forecast for the upcoming 5 days
+
+Background images that change based on the weather conditions (e.g., sunny, rainy, snowy).
+
+
+
+*/
