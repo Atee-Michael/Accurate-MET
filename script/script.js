@@ -43,9 +43,11 @@ function getWeather (cityName) {
 // Display weather data
 function displayWeather(data) {
 const temperature = data.main.temp;
+const feelsLike =data.main.feels_like;
 const description = data.weather[0].description;
+const windSpeed = (data.wind.speed * 2.23694).toFixed();
 
-weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Description: ${description}`;
+weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Feels Like: ${feelsLike}°C<br> Wind Speed: ${windSpeed}mph<br>Description: ${description}`;
 
 }
 
