@@ -67,4 +67,11 @@ input[type="text"] {
 #weatherDisplay br {
     margin: 10px 0;
   }
+
+  /* Style specific elements within the weather display */
+#weatherDisplay strong {
+    font-weight: bold;
+  }
+  
+  /* Additional styles for specific elements can be added as needed */
   
