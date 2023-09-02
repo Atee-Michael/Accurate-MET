@@ -48,8 +48,9 @@ const description = data.weather[0].description;
 const windSpeed = (data.wind.speed * 2.23694).toFixed();
 const pressure = data.main.pressure;
 const humidity = data.main.humidity;
+const location = data.name;
 
-weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Feels Like: ${feelsLike}°C<br> Wind Speed: ${windSpeed}mph<br>Description: ${description}<br>Pressure: ${pressure}hPa<br>Humidity: ${humidity}%`;
+weatherDisplay.innerHTML = `<br>Location: ${location}<br>Temperature: ${temperature}°C<br>Feels Like: ${feelsLike}°C<br> Wind Speed: ${windSpeed}mph<br>Description: ${description}<br>Pressure: ${pressure}hPa<br>Humidity: ${humidity}%`;
 
 }
 
