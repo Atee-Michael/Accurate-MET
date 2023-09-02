@@ -49,7 +49,7 @@ const windSpeed = (data.wind.speed * 2.23694).toFixed();
 const pressure = data.main.pressure;
 const humidity = data.main.humidity;
 
-weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Feels Like: ${feelsLike}°C<br> Wind Speed: ${windSpeed}mph<br>The<br>Description: ${description}<br>Pressure: ${pressure}<br>Humidity: ${humidity}%`;
+weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Feels Like: ${feelsLike}°C<br> Wind Speed: ${windSpeed}mph<br>Description: ${description}<br>Pressure: ${pressure}hPa<br>Humidity: ${humidity}%`;
 
 }
 
@@ -59,12 +59,7 @@ weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Feels Like: ${feel
 
 Weather icon representing the current conditions.
 
-Additional Weather Details:
 
-    Feels-like temperature.
-    Humidity percentage.
-    Wind speed and direction.
-    Atmospheric pressure.
 
 Location Information:
 
