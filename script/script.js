@@ -42,12 +42,14 @@ function getWeather (cityName) {
 
 // Display weather data
 function displayWeather(data) {
-const temperature = data.main.temp;
-const feelsLike =data.main.feels_like;
+const temperature = (data.main.temp).toFixed(); // added .tofixed() to round decimal places to zero
+const feelsLike =(data.main.feels_like).toFixed();
 const description = data.weather[0].description;
 const windSpeed = (data.wind.speed * 2.23694).toFixed();
+const pressure = data.main.pressure;
+const humidity = data.main.humidity;
 
-weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Feels Like: ${feelsLike}°C<br> Wind Speed: ${windSpeed}mph<br>Description: ${description}`;
+weatherDisplay.innerHTML = `Temperature: ${temperature}°C<br>Feels Like: ${feelsLike}°C<br> Wind Speed: ${windSpeed}mph<br>The<br>Description: ${description}<br>Pressure: ${pressure}<br>Humidity: ${humidity}%`;
 
 }
 
