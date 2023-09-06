@@ -1,7 +1,7 @@
-
 // Variable references
-const apiKey = "42579e9e6650ca0776839c200d53fba8";
+
 const weatherDisplay = document.getElementById("weatherDisplay")
+const apiKey = "42579e9e6650ca0776839c200d53fba8";
 
 //get references from input and submit button
 
