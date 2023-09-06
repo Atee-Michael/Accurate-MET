@@ -60,18 +60,9 @@ weatherDisplay.innerHTML = `<br>Location: ${location}<br>Temperature: ${temperat
 
 Weather icon representing the current conditions.
 
-
-
-Location Information:
-
-    City name.
-    Country code.
-    Geographic coordinates (latitude and longitude).
-
 Forecast for the upcoming 5 days
 
 Background images that change based on the weather conditions (e.g., sunny, rainy, snowy).
-
 
 
 */
