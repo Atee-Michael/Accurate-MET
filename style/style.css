@@ -1,20 +1,79 @@
-
 /* Centering the input container with text*/
 body {
-display: flex;
-justify-content: center;
-align-items: center;
-min-height: 100vh;
-margin: 0;
-
+background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
 }
 
+/*Styling for input container*/
 .input-container {
-text-align: center;
-
+  text-align: center;
 }
 
-input[type="text"], input[type="submit"] {
-    padding: 8px;
-
+input[type="text"],
+input[type="submit"] {
+  padding: 8px;
 }
+
+/* Style the input container */
+.input-container {
+    background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 20px auto;
+  width: 80%;
+  max-width: 400px;
+}
+
+/* Style the label for the input */
+label {
+  font-weight: bold;
+}
+
+/* Style the input fields */
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  align-items: center;
+}
+
+/* Style the submit button */
+#submitButton {
+    background-color: #0074d9;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+
+
+/* Style the weather display div */
+#weatherDisplay {
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-top: 10px;
+  }
+
+
+/* Style the weather data inside the weather display div */
+#weatherDisplay br {
+    margin: 10px 0;
+  }
+
+  /* Style specific elements within the weather display */
+#weatherDisplay strong {
+    font-weight: bold;
+  }
+  
+  /* Additional styles for specific elements can be added as needed */
+  
